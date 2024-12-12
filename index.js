@@ -29,3 +29,8 @@ app.post('/users', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+// Simple ping request
+app.get('/ping', (req, res) => {
+  res.send('pong');
+});
