@@ -7,7 +7,9 @@ app.use(express.json());
 
 // Basic route
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  // res.send('Hello World!');
+  // redirect to ticket.cypone.dev
+  res.redirect('https://ticket.cypone.dev');
 });
 
 // Example route to get user data
