@@ -1,7 +1,6 @@
 services:
   app:
     container_name: tos-be-app
-    command: ["sh", "-c", "git clone https://github.com/bradly0cjw/Ticket_Order_System_BE.git ."]
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -16,4 +15,4 @@ services:
     
 networks:
   cont_network:
-    external: true
+    external: false
