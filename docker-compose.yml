@@ -15,4 +15,4 @@ services:
     
 networks:
   cont_network:
-    external: false
+    external: true
