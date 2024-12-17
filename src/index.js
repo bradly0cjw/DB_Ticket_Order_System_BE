@@ -20,3 +20,8 @@ app.listen(port, () => {
 app.get('/ping', (req, res) => {
   res.send('pong');
 });
+
+// Redirect to frontend
+app.get('/', (req, res) => {
+  res.redirect('https://ticket.cypone.dev');
+});
