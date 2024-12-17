@@ -3,13 +3,13 @@ FROM node:18
 # Set the working directory
 WORKDIR /usr/src/app
 
-# Copy from github repo
-RUN git clone https://github.com/bradly0cjw/Ticket_Order_System_BE.git \
-    && cp -r Ticket_Order_System_BE/* . \
-    && rm -rf Ticket_Order_System_BE
+# # Copy from github repo
+# RUN git clone https://github.com/bradly0cjw/Ticket_Order_System_BE.git \
+#     && cp -r Ticket_Order_System_BE/* . \
+#     && rm -rf Ticket_Order_System_BE
 
-# # Copy package.json and package-lock.json
-# COPY package*.json ./
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
 # Install dependencies
 RUN npm install
