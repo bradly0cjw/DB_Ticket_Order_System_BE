@@ -8,12 +8,12 @@ WORKDIR /usr/src/app
 # and uncomment the copy from local repo
 
 # Copy from github repo
-RUN git clone https://github.com/bradly0cjw/Ticket_Order_System_BE.git \
-    && cp -r Ticket_Order_System_BE/* . \
-    && rm -rf Ticket_Order_System_BE
+# RUN git clone https://github.com/bradly0cjw/Ticket_Order_System_BE.git \
+#     && cp -r Ticket_Order_System_BE/* . \
+#     && rm -rf Ticket_Order_System_BE
 
 # Copy package.json and package-lock.json
-# COPY package*.json ./
+COPY package*.json ./
 
 # Install dependencies
 RUN npm install
